@@ -1,4 +1,5 @@
 import { useState } from "react";
+import UserForm from "./userForm";
 
 
 const PersonCardComponent = ({ firstname, lastname, age, haircolor }) => {
@@ -24,6 +25,7 @@ const PersonCardComponent = ({ firstname, lastname, age, haircolor }) => {
             <p>Age: {count.ageCount}</p>
             <p>Hair Color: {haircolor}</p>
             <button onClick={ageHandler} >Birthday Button for </button>
+            <UserForm></UserForm>
         </div>
       </fieldset>
     );
